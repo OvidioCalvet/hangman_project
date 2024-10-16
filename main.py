@@ -4,7 +4,7 @@ import random
 def is_guess_correct(status):
    
 # Loop iterates through each character in the chose word string and compares it to the players guess
-   for l in range(0,len(chosen_word)-1):
+   for l in range(0,len(chosen_word)):
 
        if chosen_word[l] == guess:
 
