@@ -4,8 +4,8 @@ import random
 # Function that checks players guess
 def is_guess_correct(status):
     # Loop iterates through each character in the chose word string and compares it to the players guess
-    for l in range(0, len(chosen_word)):
-        if chosen_word[l] == guess:
+    for l in range(0, len(chosen_word)): # Papa: where is chosen_word defined? A better way is to pass it as a parameter.
+        if chosen_word[l] == guess: # Papa: Where is guess defined? A better way is to pass it as a parameter.
             status = True
     return status
 
@@ -55,7 +55,7 @@ player_word = []
 for i in range(0, len(chosen_word)):
     player_word.append("_")
 player_lives = 6
-game_status = False
+game_status = False # Papa: Maybe a better name for this vatiable is game_is_not_over? then the while will read `while game_is_not_over:` Lets talk about this
 print("".join(player_word))
 # Player interaction code
 while game_status is False:
