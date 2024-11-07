@@ -48,7 +48,7 @@ def print_guess():
 
 
 # Variable initialization
-word_list = ["prada", "europe", "italy", "python", "moncler", "porche", "beach", "perroni"]
+word_list = ["prada", "europe", "italy", "python", "moncler", "porche", "beach", "perroni","haiti"]
 temp = word_list[random.randint(0,len(word_list)-1)]
 chosen_word = []
 for x in range(0, len(temp)):
