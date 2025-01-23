@@ -84,8 +84,7 @@ while game_status is False:
 
 if player_word == chosen_word and player_lives > 0:
 
-   print("Hooray you win!")
-
+   print("Good Job!")
 else:
 
    print("Game Over, you lose!")
